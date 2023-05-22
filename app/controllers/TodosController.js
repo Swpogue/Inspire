@@ -8,15 +8,18 @@ import { Todo } from "../models/Todo.js";
 
 
 function _drawTodos() {
-
-
+if (AppState.todos){
+  let todosCount = AppState.todos.filter(todo => !todo.completed)
+  let todoLeft = todosCount.length
+  setHTML("todosCount", todoLeft)
+    
   console.log('Did this Draw');
   let template = ''
   AppState.todos.forEach(t => { template += t.ActiveTodoList })
-
+  
   setHTML('TodosList', template)
-  setHTML("todosCount", AppState.todos.length)
   AppState.on('todos')
+}
 
 }
 
