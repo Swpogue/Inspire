@@ -1,0 +1,49 @@
+/* BASIC STYLES HERE */
+#weatherIcon{
+  max-width: 4rem;
+  max-height: 3rem;
+  font-size: x-small;
+ 
+}
+
+.imgUrl{
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  contain: layout;
+}
+.card{
+ background: transparent;
+ backdrop-filter: blur(22px);
+ color: azure;
+ 
+}
+#navbar{
+  background: transparent;
+ backdrop-filter: blur(5px);
+}
+
+#quote{
+  position: relative;
+  text-shadow: black 1px 0 10px;
+  color: white;
+  font-size: small;
+  backdrop-filter: blur(5px);
+}
+
+#clock{
+  position: relative;
+  text-shadow: 1px 1px white;
+  font-size: xx-large;
+  display: flex;
+  justify-content: space-around;
+}
+
+#author:hover{
+  opacity: 1;
+
+}
+
+#author{
+  opacity: 0;
+}
